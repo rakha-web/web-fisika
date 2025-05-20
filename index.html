@@ -163,6 +163,27 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }            
+.section-berita {
+  background-color: #1a1a1a;
+}
+
+.berita-utama .card-img {
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.berita-kecil .card-img {
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 1rem;
+}
+
     </style>
 </head>
 <body>
@@ -279,6 +300,65 @@
     </p>
   </div>
 </section>
+
+<section class="section-berita">
+  <div class="container py-5">
+    <h2 class="text-white mb-4">Berita Krisis Listrik</h2>
+
+    <!-- Berita Utama -->
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <a href="https://www.nytimes.com/2022/07/13/nyregion/new-york-city-blackout.html" target="_blank" class="text-decoration-none">
+          <div class="card bg-dark text-white border-0 berita-utama">
+            <img src="blackout.webp" class="card-img" alt="Berita Utama">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <span class="badge bg-primary mb-2">Populer</span>
+              <h5 class="card-title">45 Years Ago Tonight, a Blackout Struck New York City</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Berita Lain -->
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <a href="https://www.bbc.com/indonesia/articles/ce82kkrkrp4om" target="_blank" class="text-decoration-none">
+          <div class="card bg-dark text-white border-0 berita-kecil">
+            <img src="spanyol.webp" class="card-img" alt="Berita 1">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h6 class="card-title">Mati listrik massal di Spanyol dan Portugal – 'Orang-orang histeris dan panik, sungguh kacau'</h6>
+              <small class="text-muted">INTERNASIONAL</small>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="https://www.tempo.co/ekonomi/batam-malaysia-dan-vietnam-berebut-investasi-data-center-pengusaha-minta-harga-listrik-tak-naik-tahun-ini-1190433" target="_blank" class="text-decoration-none">
+          <div class="card bg-dark text-white border-0 berita-kecil">
+            <img src="batam.jpg" class="card-img" alt="Berita 2">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h6 class="card-title">Batam, Malaysia dan Vietnam Berebut Investasi Data Center, Pengusaha Minta Harga Listrik Tak Naik Tahun Ini</h6>
+              <small class="text-muted">REGIONAL</small>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="https://www.kompasiana.com/logikamarhein0110/6827020bc925c41c3a0b9ee2/terang-yang-timpang-krisis-listrik-di-bima-dan-dompu-sumbawa" target="_blank" class="text-decoration-none">
+          <div class="card bg-dark text-white border-0 berita-kecil">
+            <img src="sumbawa.jpg" class="card-img" alt="Berita 3">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h6 class="card-title">Terang yang Timpang: Krisis Listrik di Bima dan Dompu, Sumbawa</h6>
+              <small class="text-muted">DALAM NEGERI</small>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
